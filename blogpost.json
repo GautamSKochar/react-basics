@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {
+            "title": "how to build a progressive app with react",
+            "content":"On of easiest way is to refer github repo for create new app."
+        },
+        {
+            "title": " with jest and enzyme",
+            "content":"Refer ."
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board Component Should render as expected 1`] = `
+<div
+  className="container"
+  style={
+    Object {
+      "display": "inline-block",
+      "float": "left",
+      "whiteSpace": "nowrap",
+    }
+  }
+>
+  <h3>
+    Board of comments
+  </h3>
+  <hr />
+  <button
+    className="btn btn-info"
+    onClick={[Function]}
+  >
+    Add New
+  </button>
+  <hr />
+  <Featured
+    deleteFromBoard={[Function]}
+    index={0}
+    key="0"
+    updateCommentText={[Function]}
+  >
+    This is my new note
+  </Featured>
+  <Featured
+    deleteFromBoard={[Function]}
+    index={1}
+    key="1"
+    updateCommentText={[Function]}
+  >
+    this is another note comment
+  </Featured>
+  <Featured
+    deleteFromBoard={[Function]}
+    index={2}
+    key="2"
+    updateCommentText={[Function]}
+  >
+    We have enough comments
+  </Featured>
+</div>
+`;
+
+exports[`Board Component Should render as expected 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <button
+    className="btn btn-info"
+    onClick={[Function]}
+  >
+    Add New
+  </button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Add New",
+      "className": "btn btn-info",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": "Add New",
+    "type": "button",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Add New",
+        "className": "btn btn-info",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": "Add New",
+      "type": "button",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

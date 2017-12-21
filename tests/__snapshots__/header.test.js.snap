@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Snapshot Test 1`] = `
+<div
+  className="page-header"
+  style={
+    Object {
+      "backgroundColor": "lightgrey",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    React POC Demo
+  </h1>
+  <nav
+    className="navbar navbar-default navbar-fixed-top"
+  >
+    <ul
+      className="header"
+    >
+      <li>
+        <Link
+          replace={false}
+          to="/"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/features"
+        >
+          Features
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/about"
+        >
+          About
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/contact"
+        >
+          Contact
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/user/4"
+        >
+          User
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

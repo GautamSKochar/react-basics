@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component should render 1`] = `
+<div>
+  <p>
+    In a new Component!
+  </p>
+  <p>
+    Your name is 
+    , your age is 
+  </p>
+  <p>
+    Status: 
+    0
+  </p>
+  <hr />
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Make me Older
+  </button>
+   
+  <hr />
+  <div
+    className="MarkdownEditor"
+  >
+    <h3>
+      Input
+    </h3>
+    <textarea
+      cols="30"
+      defaultValue="Type some *markdown* here!"
+      onChange={[Function]}
+      rows="4"
+      style={
+        Object {
+          "overflow": "hidden",
+        }
+      }
+    />
+    <h3>
+      Output
+    </h3>
+    <div
+      className="content"
+    >
+      <p
+        className="content"
+      >
+        Type some *markdown* here!
+      </p>
+    </div>
+  </div>
+  <BlogPost />
+</div>
+`;

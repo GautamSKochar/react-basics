@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactChild Component Should render as expected 1`] = `
+<div
+  className="well"
+  style={
+    Object {
+      "marginLeft": "20px",
+    }
+  }
+>
+  <h4>
+    Child Component
+  </h4>
+  <br />
+  <h5>
+    Component Lifecycle Examples
+  </h5>
+  <section>
+    Some dummy text...................
+  </section>
+  <div
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <h5>
+      Hello React...! Check Console for Component life cycle methods.
+    </h5>
+  </div>
+</div>
+`;
