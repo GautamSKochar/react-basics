@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Board from '../components/Board';
+import commentsReducer from '../reducers/commentsReducer';
 
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -26,8 +27,24 @@ test('Board Component Should render as expected', () => {
     );
 
     expect(wrapper).toMatchSnapshot();
-        wrapper.find('button').simulate('onClick', {
+    wrapper.find('button').simulate('onClick', {
         target: { value },
     });
     // expect(onClick).toBeCalledWith(value);
-});    
+});
+describe('add', () => {
+    it('shoud add comment to comments array', () => {
+        const state = {
+            comments: ['hello']
+        };
+        const action = {
+            type: 'ADD_COMMENT',
+            payload: 'new comment added'
+        };
+        const expected = {
+            comments: ['hello', 'new comment added']
+        };
+        expect(commentsReducer(state, action)).toMatchObject(expected);
+
+    })
+})

@@ -6,6 +6,7 @@ import About from '../components/About';
 import User from '../components/User';
 import Board from '../components/Board';
 import Contact from '../components/Contact';
+import FilterDetails from '../components/FilterDetails';
 import createBrowserHistory from 'history/createBrowserHistory';
 import $ from 'jquery';
 
@@ -27,29 +28,11 @@ class Routes extends React.Component {
                 {/* <Route path="/user/:id" render={() => <User history={history} name="Gautam"/>} /> */}
                 <Route path="/features" render={() => <Board />} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/products" component={FilterDetails} />
                 <Route render={() => <h1>Page not found</h1>} />
             </Switch>
         );
     }
 }
 
-
-// const mapStateToProps = (state) => {
-//     return {
-//         user: state.userReducer
-//     };
-// }
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         setName: (name) =>{
-//             dispatch({
-//                 type: "SET_NAME",
-//                 payload: name
-//             })
-//         }
-//     };
-// }
-
-// export default connect(mapStateToProps,mapDispatchToProps)(Routes)
 export default Routes;

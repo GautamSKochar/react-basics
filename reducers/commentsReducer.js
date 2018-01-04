@@ -1,7 +1,7 @@
-import {LoadState, setLocalStorage} from '../localStorage';
+import _ from 'lodash';
 
 const commentsReducer = (state = {
-    comments:  []
+    comments: []
 }, action) => {
     switch (action.type) {
         case "ADD_COMMENT":
@@ -9,7 +9,9 @@ const commentsReducer = (state = {
                 ...state,
                 comments: [...state.comments, action.payload]
             }
-            //setLocalStorage("comments", state.comments);
+            _.times(2,()=>{
+                state.comments.push("gautam");
+            })
             break;
         case "EDT_COMMENT":
             state = {
@@ -18,7 +20,6 @@ const commentsReducer = (state = {
                     .concat(action.payload.newText)
                     .concat(state.comments.slice(action.payload.id + 1))
             }
-            //setLocalStorage("comments", state.comments);
             // comments[action.payload.id]: comments[action.payload.id] = action.payload.newText
             //     comments comments[action.payload.id] = action.payload.newText
             break;
@@ -32,7 +33,6 @@ const commentsReducer = (state = {
                 ...state.comments.slice(action.payload + 1)]
                 // comments.splice(action.payload,1)
             }
-            //setLocalStorage("comments", state.comments);
             break;
     }
     return state;

@@ -44,7 +44,7 @@ const mapStateToProps = (state) => {
     };
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToPropss = (dispatch) => {
     return {
         addComment: (newText) => {
             dispatch(addComment(newText))
@@ -58,4 +58,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Board);
+export default connect(mapStateToProps, mapDispatchToPropss)(Board);

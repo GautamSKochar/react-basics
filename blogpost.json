@@ -2,11 +2,49 @@
     "posts": [
         {
             "title": "how to build a progressive app with react",
-            "content":"On of easiest way is to refer github repo for create new app."
+            "content": "On of easiest way is to refer github repo for create new app."
         },
         {
             "title": " with jest and enzyme",
-            "content":"Refer ."
+            "content": "Refer ."
+        }
+    ],
+    "products": [
+        {
+            "category": "Sporting Goods",
+            "price": "$49.99",
+            "stocked": true,
+            "name": "Football"
+        },
+        {
+            "category": "Sporting Goods",
+            "price": "$9.99",
+            "stocked": true,
+            "name": "Baseball"
+        },
+        {
+            "category": "Sporting Goods",
+            "price": "$29.99",
+            "stocked": false,
+            "name": "Basketball"
+        },
+        {
+            "category": "Electronics",
+            "price": "$99.99",
+            "stocked": true,
+            "name": "iPod Touch"
+        },
+        {
+            "category": "Electronics",
+            "price": "$1010.99",
+            "stocked": false,
+            "name": "iPhone X"
+        },
+        {
+            "category": "Electronics",
+            "price": "$199.99",
+            "stocked": true,
+            "name": "Nexus 7"
         }
     ]
 }
