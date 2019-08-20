@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import {syncHistoryWithStore } from 'react-router-redux';
+import { syncHistoryWithStore } from 'react-router-redux';
 import logger from 'redux-logger';
 import math from './reducers/mathReducer';
 import user from './reducers/userReducer';
@@ -10,14 +10,14 @@ import activeUser from './reducers/activeUserReducer';
 import comments from './reducers/commentsReducer';
 import products from './reducers/productsReducer';
 
-const persistedState ={
+const persistedState = {
     comments: ['hiiiiiiiiiii']
 };
 
 let middleware = applyMiddleware(logger, thunk, promise());
 
-if(process.env.NODE_ENV!=='production'){
-    middleware = compose(middleware, window.devToolsExtension && window.devToolsExtension())
+if (process.env.NODE_ENV !== 'production') {
+    middleware = compose(middleware, window.devToolsExtension ? (window.devToolsExtension && window.devToolsExtension()) : compose)
 }
 
 export default createStore(
@@ -26,7 +26,7 @@ export default createStore(
         user,
         userList,
         activeUser,
-        comments,persistedState,
+        comments, persistedState,
         products
     }),
     {},
