@@ -10,9 +10,6 @@ class ContactChild extends React.Component {
         console.log('Constructor');
     }
 
-    componentWillMount() {
-        console.log('Component will mount');
-    };
     componentDidMount() {
         console.log('Component did mount');
         this.timer = setInterval(function () {
@@ -26,9 +23,7 @@ class ContactChild extends React.Component {
             });
         }.bind(this), 100);
     };
-    componentWillReceiveProps(nextProps) {
-        console.log('Component will receive props', nextProps);
-    };
+    
     shouldComponentUpdate(nextProps, nextState) {
         console.log('Should Component update', nextProps, nextState);
         return true;
